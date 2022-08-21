@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>base of the Vue</title>
+  </head>
+
+  <body>
+
+    <section id="v-if-sign-in">
+        <h3>v-ifでサインイン</h3>
+        <div v-if="user != null">
+            <button v-on:click="signOut">サインアウト</button>
+            <div>
+                {{ user.name }}さん、こんにちは！
+            </div>
+        </div>
+
+        <div v-else>
+            <button v-on:click="signIn">sign in</button>
+            <div>
+                Please sign in 
+            </div>
+        </div>     
+    </section>
+
+    <section id="v-for">
+      <h3>v-for</h3>
+      <div v-for="animal in animals">{{ animal }}</div>
+
+    </section>
+    
+    <script src="https://unpkg.com/vue@3.2.20"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
