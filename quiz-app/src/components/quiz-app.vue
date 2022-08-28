@@ -230,6 +230,7 @@ export default {
 .choicebutton.isActive {
     visibility: hidden;
 }
+
 #feedback {
     text-align: center;
     background-color: aliceblue;
